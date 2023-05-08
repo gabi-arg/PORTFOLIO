@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section class="section-container-principal">
+            <img class="backgroud-container" src="./css/img/fondo.webp" alt="img-fondo">
+            <div class="container" >
+                <div class="menu">
+                    <img  class="menu-icons" id="menu" src="./css/img/lista.png" alt="logo-menu">
+                    <img  class="menu-icons" id="menu-close" src="./css/img/x.png" alt="logo-menu">
+                </div>
+                <div class="menu-background">
+                    <a href="#sobreMi">Sobre Mí</a>
+                    <a href="#skill">Habilidades</a> 
+                    <a href="#projects">Proyectos</a> 
+                    <a href="#contact">Contactame</a> 
+                </div>
+                <div class="section-presentation">
+                    <h1>HOLA! SOY GABRIELA</h1>
+                    <p>Bienvenido a mi SitioWeb. Soy Frontend Developer</p>
+                </div>
+                
+            </div>
+    </section>
+        <div class="page-container">
+            <section class="section-about-me" id="sobreMi">
+                <img src="./css/img/foto perfil.png" alt="foto-perfil">
+                <div class="about-me-text">
+                    <h2>Sobre Mí</h2>
+                    <p>Hola! Me llamo Gabriela, Y me inserte en este mundo inmenso, que se actualiza y cambia constantemente. Se que no es facil, tampoco fue facil descubrirlo, pero una vez que nos encontramos decide dar todo de mi para poder lograr un dia ser una profesional TI. Asi es como me decidi a invertir mucho tiempo y esfuerzo para lograr mis metas. Soy estudiante de la tecnicatura en Programacion del Instituto Teclab. Ademas me considero  apasionada del Desarrollo Web, el cual a travez de cursos y de manera autodidacta he logrado adquirir conocimientos en diferentes tecnologias. Con las cuales he logrado desarrollar diferentes proyectos propios. Muchas Gracias por ver mi portfolio el cual considero que refleja un poco mas de mi mas alla de mis capacidad como porgramadora si no tambien como persona.</p>
+                    <div class="btn">
+                        <img src="./css/img/descargar.png" alt="">
+                        <a download="" href="./css/img/curriculumVitae-GabrielaDuran.pdf" alt="logo-descarga">  Descarga mi CV </a>
+                        
+                    </div>
+                    
+                   
+                </div>
+            </section>
+            <section class="section-skill" id="skill">
+                <h2>Habilidades</h2>
+                <div class="skill">
+                    <img src="./css/img/html-5 (1).png" alt="logo-lenguaje">
+                    <img src="./css/img/CSS3.png" alt="logo-lenguaje">
+                    <img src="./css/img/bottstrap.jpg" alt="logo-lenguaje">
+                    <img src="./css/img/js.webp" alt="logo-lenguaje">
+                    <img src="./css/img/angular.png" alt="logo-lenguaje">
+                    
+                    
+                </div>
+            </section>
+            <section class="section-projects" id="projects">
+                <h2>Proyectos</h2>
+            <div class="projects">
+                <div class="firts">
+                 
+                <div class="proyect-container">
+                    <img class="proyect-container-desktop" src="./css/img/portfolioImg.jpg" alt="" >
+                    <img class="proyect-container-mobile" src="./css/img/portfolioImg1.jpg" alt="" >
+                    <div class="btn-project">
+                         <a href="/">Demo</a>
+                         <a href="https://github.com/gabi-arg/E-commerce-Proyecto-Propio">Code</a>
+                    </div>
+                </div>
+                <div class="proyect-container">
+                    <img class="proyect-container-desktop" src="./css/img/proyecto-Ecommers1.jpg" alt="" >
+                    <img class="proyect-container-mobile" src="./css/img/proyecto-Ecommers.jpg" alt="" >
+                    <div class="btn-project">
+                         <a href="https://store-ecommers.netlify.app/index.html">Demo</a>
+                         <a href="https://github.com/gabi-arg/E-commerce-Proyecto-Propio">Code</a>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <div class="proyect-container">
+                    <img class="proyect-container-desktop" src="./css/img/foodmenu.jpg" alt="" >
+                    <div class="btn-project">
+                         <a href="https://github.com/gabi-arg/food.menu">Code</a>
+                    </div>
+                    </div>
+                </div>
+             
+            </div>
+            </section>
+            <section class="section-contact" id="contact">
+                <h2>Contactame</h2>
+                <form action="https://formspree.io/f/xoqzrojd"  method="POST">
+                    <label >Nombre</label>
+                    <input  type="text" name="nombre" >
+
+                    <label class="label-email" >Email</label>
+                    <input type="text" name="email">
+
+                    <label >Mensaje</label>
+                    <input class="label-mensaje" name="mensaje" type="text">
+
+                    <button class="form-btn" type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+        </main>
+    <script src="./main.js"></script>
+</body>
+</html>

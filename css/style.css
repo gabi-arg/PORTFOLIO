@@ -1,0 +1,396 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,700;1,400&display=swap');
+/* Aquí definimos las Custom properties */
+:root {
+    --negro: #393939;
+    --blanco: #ececec;
+    --sombra-ppal: #c9c9c9;
+    --sombra-sec: #ffffff;
+    --borde-negro: #00000050;
+    --marcado: rgb(127, 195, 255);
+    --background-green: rgb(62 89 53 / 68%);
+   
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backgroud-container {
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+    position: relative;
+
+}
+.container {
+    height: 80% ;
+    width: 80%;
+    background-color: var(--background-green);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu-icons {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 86%;
+    top: 15%;
+    cursor: pointer;
+}
+.menu-background{
+    flex-direction: column;
+    align-items: center;
+    width: 46.5rem;
+    height: 17rem;
+   
+    position: absolute;
+    top: 25%;
+    left: 19%;
+    background-color: #ffffff;
+    border: none;
+    z-index: 2;
+}
+.menu-background a {
+    color:#0a0a0a;
+    margin-top: 2.4rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu-background a:hover{
+    font-size: 1.2rem;
+    color: #555454;
+    transition: 550ms;
+}
+.section-presentation {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid white;
+    width:46rem;
+    height: 17rem;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 1;
+}
+.section-presentation h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.flecha {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 86%;
+}
+.page-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(94, 112, 96, 0.235);
+}
+.section-about-me {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    color: rgb(43, 41, 41);
+    
+}
+.section-about-me img {
+    width: 17rem;
+    margin-left: 7rem;
+    margin-top: 4rem;
+    object-fit: cover;
+}
+.about-me-text {
+    width: 70%;
+    height: 100%;
+    margin: 70px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+h2 {
+   font-size: 2.5rem;
+}
+.about-me-text p {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 3rem;
+    line-height: 1.6rem;
+}
+.btn {
+    width: 12rem;
+    height: 5rem;
+    background-color: var(--background-green);
+    border-radius: 1rem;
+    position: relative;
+    padding: 1rem 0.5rem;
+
+}
+.btn  a {
+    position: absolute;
+    right: 9%;
+    top: 38%;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn img {
+    position: absolute;
+    right: 80%;
+    bottom: 38%;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.section-skill {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(43, 41, 41);
+    
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section-skill h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.skill {
+    margin: 1.4rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill img {
+    width: 4.2rem;
+    height:4.2rem;
+}
+.section-projects {
+    background-color:white;
+    color: rgb(43, 41, 41);
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  
+}
+.section-projects h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.firts{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.proyect-container{
+    position: relative;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.proyect-container-desktop {
+    width: 27rem;
+    height: 13rem;
+    object-fit: contain;
+    position: relative;
+    border-radius: 1rem;
+    border: 1px solid var(--blanco);
+    box-shadow: 4px 4px 4px 4px var(--negro);
+}
+.proyect-container-mobile{
+    width: 10rem;
+    height: 16rem;
+    background-color: var(--blanco);
+    object-fit: cover;
+    position: absolute;
+    padding: 0.5rem;
+    top: 45%;
+    left: 55%;
+    border-radius: 1rem;
+    border: 1px solid var(--blanco);
+    box-shadow: 4px 4px 4px 4px var(--negro);
+}
+.btn-project{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.btn-project a{
+    width: 8rem;
+    height: 3rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    background-color: var(--background-green);
+    color: var(--blanco);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.section-contact {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(43, 41, 41);
+    width: 80%;
+    height: auto;
+    padding: 12rem 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+.section-contact input{
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+.label-mensaje {
+    height: 8rem;
+}
+
+.section-contact .form-btn{
+    height: 4rem;
+    width: 20rem;
+    background-color: var(--background-green);
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--blanco);
+    margin-top: 2rem;
+    cursor: pointer;
+
+}
+
+    
+@media (min-width:390px)and (max-width:440px){
+    .container{
+        height: 70%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .section-presentation{
+        width: 14rem;
+        left: 15%;
+        z-index: 1;
+    }
+    .section-presentation h1{
+        font-size: 2rem;
+    }
+    .section-presentation p{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .menu-background{
+        width: 14rem;
+        height: 17rem;
+        right: 14%;
+        z-index: 2;
+       
+    }
+    .flecha{
+        top: 92%;
+    }
+
+    .menu-icons{
+        top: 5%;
+    }
+    .section-about-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .section-about-me img{
+        width: 6rem;
+        margin: 3rem 0;
+    }
+    .about-me-text{
+        margin: 1rem 0.5rem;
+    }
+    .about-me-text h2{
+        margin-bottom: 2rem;
+    }
+    .about-me-text p{
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
+    .section-skill{
+        width: 100%;
+    }
+    .skill{
+        display: grid;
+        margin: 0;
+        margin-left: 5rem;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .skill img{
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    .section-projects{
+        width: 100%;
+        
+    }
+    .section-projects h2{
+        font-size: 2rem;
+    }
+    .projects{
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+    .section-contact{
+        width: 100%;
+        width: 100%;
+        padding-top: 7rem;
+        margin-bottom: 1rem;
+    }
+   
+
+}
