@@ -216,13 +216,13 @@ h2 {
     margin-bottom: 6rem;
 }
 
-.proyect-container{
+.project-container{
     position: relative;
     cursor: pointer;
     margin-left: 2rem;
 }
 
-.proyect-container-desktop {
+.project-container-desktop {
     width: 27rem;
     height: 13rem;
     object-fit: contain;
@@ -231,7 +231,7 @@ h2 {
     border: 1px solid var(--blanco);
     box-shadow: 4px 4px 4px 4px var(--negro);
 }
-.proyect-container-mobile{
+.project-container-mobile{
     width: 10rem;
     height: 16rem;
     background-color: var(--blanco);
@@ -303,7 +303,7 @@ h2 {
 }
 
     
-@media (min-width:390px)and (max-width:440px){
+@media (min-width:320px)and (max-width:440px){
     .container{
         height: 70%;
     }
@@ -325,7 +325,7 @@ h2 {
     .menu-background{
         width: 14rem;
         height: 17rem;
-        right: 14%;
+        left: 15%;
         z-index: 2;
        
     }
@@ -377,13 +377,35 @@ h2 {
         width: 100%;
         
     }
+    .firts{
+        
+        flex-direction: column;
+        
+        gap: 5rem;
+       
+    }
+    .project-container-desktop {
+        width: 17rem;
+        height: 9rem;
+        object-fit: cover;
+        
+    }
+    .project-container-mobile{
+        width: 7rem;
+        height: 12rem;
+        padding: 0.2rem;
+        top: 40%;
+        
+    }
+   
     .section-projects h2{
         font-size: 2rem;
     }
     .projects{
         display: flex;
         flex-direction: column;
-        gap: 7rem;
+        padding-right: 2rem;
+        
     }
     .section-contact{
         width: 100%;
